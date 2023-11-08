@@ -53,3 +53,33 @@ for(let indicePeliculas = 0; indicePeliculas < peliculas.length; indicePeliculas
     document.write(`<li>${peliculas[indicePeliculas]}</li>`)
 }
 document.write('</ul>');
+
+//eliminar elementos del array
+peliculas.shift();
+document.write(`<h2>Eliminamos el primer elemento del array(${peliculas.length}) </h2>`)
+document.write('<ul>')
+for(let indicePeliculas = 0; indicePeliculas < peliculas.length; indicePeliculas++){
+    document.write(`<li>${peliculas[indicePeliculas]}</li>`)
+}
+document.write('</ul>');
+
+//borrar elementos del medio del array
+peliculas.splice(6,1);
+// peliculas.splice(6,2);
+// peliculas.splice(6);
+document.write(`<h2>Eliminamos un elemento del array(${peliculas.length}) </h2>`)
+document.write('<ul>')
+for(let indicePeliculas = 0; indicePeliculas < peliculas.length; indicePeliculas++){
+    document.write(`<li>${peliculas[indicePeliculas]}</li>`)
+}
+document.write('</ul>');
+
+//borrar el ultimo elemento del array
+peliculas.pop();
+document.write(`<h2>Eliminamos el ultimo elemento del array(${peliculas.length}) </h2>`)
+document.write('<ul>')
+for(let indicePeliculas = 0; indicePeliculas < peliculas.length; indicePeliculas++){
+    document.write(`<li>${peliculas[indicePeliculas]}</li>`)
+}
+document.write('</ul>');
+
