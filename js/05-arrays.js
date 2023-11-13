@@ -71,3 +71,34 @@ peliculas.pop();
 mostrarPeliculas(
   `Eliminamos el ultimo elemento del array(${peliculas.length})`
 );
+
+peliculas.push('Jurassic park 1', 'Jurassic park 2');
+peliculas.splice(2, 0, 'Jurassic park 3');
+mostrarPeliculas('Agregamos nuevas pelis de Jurassic park');
+
+//filtrar todas las pelis jurassic park
+// const pelisDeJurassicPark = peliculas.filter((pelicula) => pelicula === 'Jurassic park 1' );
+const pelisDeJurassicPark = peliculas.filter((pelicula) => pelicula.includes('Jurassic') );
+console.log(pelisDeJurassicPark)
+
+console.log(peliculas[0].includes('Jurassic'));
+
+//buscar un elemento en el array
+const peliBuscada = peliculas.find( (itemPelicula) => itemPelicula === "Interestellar" );
+const peliBuscada2 = peliculas.find( (itemPelicula) => itemPelicula === "rocky" );
+console.log(peliBuscada)
+
+document.write(`<p>Peli buscada: ${peliBuscada}</p>`)
+// document.write(`<p>Peli buscada (rocky): ${peliBuscada2}</p>`)
+
+// if(peliBuscada2 !== undefined){
+//     document.write(`<p>Peli buscada: ${peliBuscada2}</p>`)
+// }else{
+//     document.write(`<p>No se encontro la pelicula buscada</p>`)
+// }
+
+// operador ternario 
+// (condicion logica)? true : false;
+
+// const respuesta = (peliBuscada2 !== undefined)? peliBuscada2 : 'No se encontro la pelicula';
+document.write(`<p>Peli buscada: ${(peliBuscada2 !== undefined)? peliBuscada2 : 'No se encontro la pelicula'}</p>`)
