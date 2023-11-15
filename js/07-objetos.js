@@ -19,8 +19,7 @@ const usuario = {
     }
 }
 
-console.log(this);
-
+console.log(this)
 console.log(usuario)
 document.write(usuario)
 document.write(`<h2>Usuario: ${usuario.nickname}</h2>`)
